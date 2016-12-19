@@ -1,0 +1,310 @@
+/*STYLING THE MAIN CONTAINER*/
+
+/*setting the width of the main container along with margins and the font styles*/
+.main-container {
+	width: 1080px;
+	margin: 0 auto;
+	font-family: Times New Roman;
+	font-size: 11pt;
+	color: #470704;
+}
+
+/*STYLING THE HEADER OF THE PAGES*/
+
+/*the header spacing around the element*/
+header.top {
+	padding: 5px 25px;
+}
+
+/*the header text and font styled*/
+header.top {
+	text-align: center;
+	font-size: 24pt;
+}
+
+/*STYLING/FORMATTING SECTIONS*/
+
+/*middle section of the about page - setting the width, spacing on the bottom of elements, and margins*/
+section.middleabout {
+	width: 1050px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+/*aside section of the resume page, formating it to shift to the left, setting it's width and margin*/
+aside.leftresume {
+	float: left;
+	width:200px;
+	margin-right:10px;
+}
+
+/*main section of the resume page, formatting it to shift to the left, setting it's width and spacing on the bottom of elements*/
+main.mainresume {
+	float:left;
+	width: 850px;
+	padding-bottom:10px;
+}
+
+/*section of the gallery page - setting it's width, spacing around elements, margins, and styling text*/
+section.gallery {
+	width: 1050px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*section of the honesty page - setting it's width, spacing around elements, margins, and styling text*/
+section.honesty {
+	width: 1050px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/*section of the resume page - setting it's width, spacing around elements, margins, background-color, borders*/
+section.resume {
+	width: 709px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+	background-color: #ffeee6;
+	border-top: 1px solid #470704;
+	border-bottom: 1px solid #470704;
+}
+
+/*elements with left as their class - shifting to the left, setting width, and margins*/
+.left {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+/*elements with middle as their class - shifting to the left, setting width, and margins*/
+.middle {
+	float: left;
+	width: 550px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+/*elements with right as their class - shifting to the left, setting width, and margins*/
+.right {
+	float: left;
+	width: 130px;
+	margin-top: 30px;
+}
+
+/*STYLING THE FOOTER*/
+
+/*styling the footer to go below all floating elements, adjusting spacing around elements, and setting border*/
+footer.main {
+	clear: both;
+	padding: 10px;
+	border-top: 1px solid black;
+}
+
+/*STYLING IMAGES*/
+
+img.me {
+	width: 100%;
+	border-radius: 8px;
+}
+
+img.work {
+	padding-left: 40px;
+	padding-top: 90px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+img.linkedin{
+	width: 10%;
+	display: block;
+	margin: auto;
+}
+
+img.facebook{
+	width: 10%;
+	display: block;
+	margin: auto;
+}
+
+img.myinstagram{
+	width: 10%;
+	display: block;
+	margin: auto;
+}
+
+img.instagram{
+	width: 10%;
+}
+
+img.kinsley{
+	width: 75%;
+	padding: 30px;
+	border-radius: 50%;
+}
+
+img.doodle {
+	width: 75%;
+	padding: 30px;
+	border-radius: 50%;
+}
+
+img.smallhead {
+	width: 10em;
+	display: block;
+	margin: auto;
+}
+
+img.mesection, img.postssection, img.archivesection {
+	display: block;
+	margin: auto;
+}
+
+figure {
+	display:inline-block;
+	border:1px solid #470704;
+	border-radius: 4px;
+	background-color: white;
+	padding:10px;
+	margin:3px;
+}
+
+figure img {
+	width: 16em;
+	height: 15em;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/*STYLING POST ENTRIES*/
+
+/*unordered lists within the id are set to have a disc as the style of bullet*/
+#post-entry1 ul {
+	list-style-type: disc;
+}
+
+/*ordered lists within the id are set to have no bullet*/
+#post-entry1 ol {
+	list-style-type: none;
+}
+
+/*element with this id is set to have spacing around elements, a border, spacing around, and background color*/
+#post-entry1 {
+	padding: 10px;
+	border-top: 1px solid black;
+	margin: 20px;
+	background-color: #ffeee6;
+}
+
+/*element with this id is set to have spacing around elements, a border, spacing around, and background color*/
+#post-entry2 {
+	padding: 10px;
+	border-top: 1px solid black;
+	margin: 20px;
+	background-color: #ffeee6;
+}
+
+/*element with this id is set to have spacing around elements, a border, and spacing around*/
+#post-entry3 {
+	padding: 10px;
+	border-top: 1px solid black;
+	margin: 20px;
+}
+
+/*STYLING THE MENU KEPT IN A HEADER TAG*/
+
+header.menu {
+	margin-left: 8%;
+	text-align: center;
+}
+
+/*STYLING THE MENU*/
+
+/*unordered lists within header tag are set to have zero spacing around elements, zero spacing around, a background color, and shifting to the left*/
+header ul {
+	padding: 0;
+	margin: 0;
+	background: #ffffff;
+	float: left;
+}
+
+/*list items within header tag are set to shift left, display inline instead of block, position relative to the parent, width is set,
+text is styled, and bullets are ommitted*/
+header li {
+	float: left;
+	display: inline;
+	position: relative;
+	width: 130px;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+/*unordered lists within unordered lists and within header tag are set to position as absolute, background color is set, and left and top spacing is zero*/
+header ul ul {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #ffffff;
+	display: none;
+}
+
+/*list items styled when hovered over, with unordered lists, within header tags to display at block level*/
+header li:hover > ul {
+	display: block;
+}
+
+/*a tags with list and visisted subclasses - font color set*/
+a:link, a:visited {
+	color: #470704;
+}
+
+/*a tags styled when hovered over, background color set, font color, and text is underlined*/
+a:hover {
+    background-color: #470704;
+	color: white;
+	text-decoration: underline;
+}
+
+/*MISCELLANEOUS*/
+
+/*h5 tags within div tags - text is centered*/
+div h5 {
+	text-align: center;
+}
+
+/*a tag with button as the class - width is set, display is block level, and margins are auto*/
+a.button {
+	width: 25%;
+	display: block;
+	margin: auto;
+}
+
+/*table headers and descriptions within tables are aligned to have centered text*/
+table th, table td {
+	text-align: center;
+}
+
+/*h3 tag with class center, and p tag with class center are set to have centered text*/
+h3.center, p.center {
+	text-align: center;
+}
+
+/*h1 tag with class about is set to have text centered*/
+h1.about {
+	text-align: center;
+}
+
+/*h2 tag with resume class is set to have specified spacing around elements/content*/
+h2.resume {
+	padding-left: 235px;
+}
+

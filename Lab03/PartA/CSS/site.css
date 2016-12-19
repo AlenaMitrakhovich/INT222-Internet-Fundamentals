@@ -1,0 +1,134 @@
+/********************************************************************************* 
+*
+* INT222 – Lab #3a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Alena Mitrakhovich Student ID: 115 297 152 Date: October 23, 2016
+* 
+********************************************************************************/
+
+/*index.html*/
+
+p.links, p.html5 {
+	text-indent: 16px; 
+	font-family: Serif;
+}
+
+p.html5 {
+	text-transform: uppercase; 
+	font-size: 14pt;
+}
+
+h3.home{
+	text-align: center;
+	font-family: Serif;
+}
+
+a:link.home, a:visited.home {
+	font-size: 11pt;
+    background-color: black;
+    color: silver;
+    text-decoration: underline;
+}
+
+a.home:hover {
+    background-color: red;
+	color: white;
+	text-decoration: none;
+}
+
+/*list.html*/
+ol.food {
+	font-size: 11pt;
+	font-family: Serif;
+}
+ol.pizza {
+	background-color: silver;
+	color: white;
+}
+ul.pasta{
+	background-color: black;
+	color: white;
+}
+ul.other{
+	background-color: black;
+	color: white;
+}
+
+/*table.html*/
+table.grades th, table.grades td, table.dogs th, table.dogs td {
+	padding: 5px;
+	margin: 10px;
+}
+
+table.grades, table.grades th, table.grades td {
+	border: 1px solid black;
+}
+
+table.dogs thead, table.dogs tfoot {
+	background-color: black;
+	color: white;
+}
+
+table.dogs tbody {
+	background-color: silver;
+	color: white;
+}
+
+/*image.html*/
+img.seneca {
+	width: 25%;
+	height: 25%;
+}
+
+img.ict {
+	width: 20%;
+	height: 20%;
+}
+
+/*audio.html*/
+figure.audio {
+	border: 1px solid black;
+	font-family: Serif;
+}
+
+/*video.html*/
+figure.video {
+	border: 1px solid black;
+	font-family: Serif;
+}
+
+/*seneca.html*/
+#general, #campuses, #academics { 
+	text-transform: uppercase;
+}
+
+#york, #newnham, #program1 {
+	font-style: italic;
+}
+
+.campuses {
+	background-color: silver;
+	font-family: Serif;
+}
+.academics, .general{
+	background-color: black;
+	color: white;
+	font-family: Serif;
+}
+.bold {
+	font-weight: bold;
+	color: #009900;
+	font-family: Serif;
+}
+
+.seneca {
+	font-weight: bold;
+	color: red;
+}
+
+

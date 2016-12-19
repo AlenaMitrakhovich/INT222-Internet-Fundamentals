@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="lab05.css"/>
+</head>
+
+<body>
+
+<header class="jobsearch">
+	<h1>JobSearch.com</h1>
+</header>
+
+<div class="main-container">
+
+	<h2 class="main">Create Your Account</h2>
+	
+	<p class="asterisk">* Required information</p>
+
+	<form action="https://httpbin.org/post" method="post" name="signup" onsubmit="return validateForm(this)">
+		<fieldset class="basic">
+			 <legend>Basic Information</legend>
+			 <label for="mail">Email<span class="asterisk">*</span></label>
+			 <input type="email" name="mail" id="mail" autofocus required /><br>  
+			 
+			 <label for="pass">Password<span class="asterisk">*</span></label>
+			 <input type="password" name="pass" id="pass" required onchange="validatePassword(this.value)" />  <br>  
+			 <div id="passerror"></div>
+			 <label for="pass2">Retype Password<span class="asterisk">*</span></label>
+			 <input type="password" name="pass2" id="pass2" required onchange="validateRetypePassword(this.value)"/> <br /> 
+			 <div id="retypepasserror"></div>
+			 
+			 <label for="name">First Name<span class="asterisk">*</span></label>
+			 <input type="text" name="name" id="name" required onchange="validateName(this.value)"> <br />
+			 <div id="nameerror"></div>
+			 
+			 <label for="lname">Last Name<span class="asterisk">*</span></label>
+			 <input type="text" name="lname" id="lname" required onchange="validateLname(this.value)"/><br>
+			 <div id="lnameerror"></div>
+			 
+			 <label for="phone">Phone Number<span class="asterisk">*</span></label>
+			 <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required onchange="validatePhoneNumber(this.value)"/> <br>  
+			 <div id="phoneerror"></div>
+			 
+			 <label for="add">Address<span class="asterisk">*</span></label>
+			 <input type="text" name="add" id="add" required /> <br />  
+			 <label for="city">City<span class="asterisk">*</span></label>
+			 <input type="text" name="city" id="city" required /> <br />
+			 <label for="province">Province<span class="asterisk">*</span></label>
+			 <select name="province" id="province" required >
+							<optgroup label="Provinces">
+								<option value="AB"> Alberta </option>
+								<option value="BC"> British Columbia </option>
+								<option value="MB"> Manitoba </option>
+								<option value="NB"> New Brunswick </option>
+								<option value="NL"> Newfoundland </option>
+								<option value="NS"> Nova Scotia </option>
+								<option value="PE"> Prince Edward Island </option>
+								<option value="QC"> Quebec </option>
+								<option value="SK"> Saskatoon </option>
+								<option value="ON"> Ontario </option>
+							</optgroup>
+							<optgroup label="Territories">
+								<option value="NU"> Nunavut </option>
+								<option value="NT"> Northwest Territories </option>
+								<option value="YT"> Yukon Territory </option>
+							</optgroup>
+			 </select> <br />
+			 <label for="country">Country<span class="asterisk">*</span></label>
+			 <input type="text" list="country" name="country" required />
+					  <datalist id="country">
+							<option value="CA">Canada</option>
+							<option value="US">United States of America</option>
+							<option value="BEL">Belarus</option>
+							<option value="RUS">Russia</option>
+							<option value="ITL">Italy</option>
+					  </datalist>
+		</fieldset> 
+		
+		<fieldset class="education">
+			 <legend>Education</legend>
+			 <label for="school">School<span class="asterisk">*</span></label>
+			 <input type="text" name="school" id="school" required/> <br> 
+			 <label for="program">Program<span class="asterisk">*</span></label>		 
+			 <input type="text" name="program" id="program" required /> <br>  
+			 <label for="education">Education Level<span class="asterisk">*</span></label>
+							  <select name="education" id="education" required>
+								<option value="" >-select-</option>
+								<option value="Tech"> Technical Diploma </option>
+								<option value="Col"> College Diploma </option>
+								<option value="Bach"> Bachelor's Degree </option>
+								<option value="Mas"> Master's Degree </option>
+								<option value="Oth"> Others </option>
+							  </select> <br /> 
+			 <fieldset class="status">
+				 <legend>Education Status</legend>
+				 <input type="radio" name="status" id="grad" value="Graduated" >Graduated <br >
+				 <input type="radio" name="status" id="enrolled" value="Currently Enrolled" >Currently Enrolled <br > 
+				 <input type="radio" name="status" id="notgrad" value="Did Not Graduate" >Did Not Graduate <br >
+				 <div id="educationerror"></div>
+			 </fieldset>
+			 <label for="date">Graduation Date<span class="asterisk">*</span></label>
+			 <input type="text" name="date" id="date" required /> <br>  
+		</fieldset> 
+		
+		<fieldset class="work">
+			 <legend>Work Experience</legend>
+			 <label for="emp">Employer:</label>
+			 <input type="text" name="emp" id="emp" /><br>  
+			 <label for="job">Job Title:</label>
+			 <input type="text" name="job" id="job" />  <br>  
+			 <label for="duty">Job Duty:</label>
+			 <textarea id="duty"> </textarea> <br /> 
+			 <label for="workyear">Worked Year:</label>
+			 <input type="number" name="workyear" id="workyear" min="1" max="20"/> <br />
+		</fieldset> 
+		
+		<fieldset class="attach">
+			 <legend>Attachments</legend>
+			 <label for="attach">Attachments:</label>
+			 <input type="file" name="attach" id="attach" multiple /><br>  
+		</fieldset> 
+		
+		<div id="suberrors"></div>
+		<fieldset class="buttons">
+			 <input type="reset" value="Reset">
+			 <input type="submit" value="Apply"><br>  
+		</fieldset> 
+		
+
+	</form>
+
+	<script src="lab05.js"></script>
+</div>
+</body>
+
+</html>

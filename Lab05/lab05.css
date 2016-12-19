@@ -1,0 +1,192 @@
+/*
+Alena Mitrakhovich
+115 297 152
+*/
+
+/*styling the asterisk red*/
+.asterisk {
+	color: #b30000;
+}
+
+/*setting the backgrounnd color to gray*/
+body {
+	background-color: #d9dbda;
+}
+
+/*styling the main container*/
+.main-container {
+	background-color: white;
+	color: #3c3d3d;
+	font-size: 13px;
+	font-family: Arial;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+	/*rounded edges*/
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	/*gray shadow*/
+	-webkit-box-shadow:0px 0px 40px 0px #5a5353 ;
+	-moz-box-shadow:0px 0px 20px 0px #5a5353 ;
+	box-shadow:0px 0px 20px 0px #5a5353 ;
+}
+
+/*styling the header*/
+header.jobsearch {
+	font-family: Arial;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: white;
+	font-weight: bold;
+	background-color: red;
+	/*rounded edges*/
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	/*gray shadow*/
+	-webkit-box-shadow:0px 0px 40px 0px #5a5353 ;
+	-moz-box-shadow:0px 0px 20px 0px #5a5353 ;
+	box-shadow:0px 0px 20px 0px #5a5353 ;
+}
+
+/*styling the h2 with main class*/
+h2.main{
+	text-shadow:0px 0px 2px #3c3d3d;
+	color: #3c3d3d;
+	font-weight: bold;
+}
+
+/*styling the form*/
+form {
+            /* Just to center the form on the page */
+            margin: 0 auto;
+            width: 500px;
+         
+}
+        
+form div + div {
+            margin-top: 1em;
+}
+      
+/*styling the labels to be consistent*/	  
+label {
+            /* To make sure that all labels have the same size and are properly aligned */
+            display: inline-block;
+            width: 110px;
+            text-align: right;
+}
+        
+/*styling the input fields to be consistent*/
+input, textarea, select {
+            /* To make sure that all text fields have the same font settings
+               By default, textareas have a monospace font */
+            font: 1em arial;
+			
+			/*rounded edges*/
+			border-radius:5px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			/*gray shadow*/
+			-webkit-box-shadow:0px 0px 50px 0px #5a5353 ;
+			-moz-box-shadow:0px 0px 5px 0px #5a5353 ;
+			box-shadow:0px 0px 5px 0px #5a5353 ;
+        
+            /* To give the same size to all text field */
+            width: 200px;
+            -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+            -moz-box-sizing: border-box;    /* For all Gecko based browsers */
+            box-sizing: border-box;
+        
+            /* To harmonize the look & feel of text field border */
+            border: 1px solid #999;
+			margin: 5px;
+}
+        
+/*styling the textarea*/
+textarea {
+            /* To properly align multiline text fields with their labels */
+            vertical-align: top;
+        
+            /* To give enough room to type some text */
+            height: 5em;
+        
+            /* To allow users to resize any textarea vertically
+               It does not work on every browsers */
+            resize: vertical;
+}
+
+/*styling the fieldsets to be the same*/
+fieldset {
+	border: 0px;
+}
+
+/*styling the fieldset legends to be the same*/
+fieldset.basic legend, fieldset.education legend, fieldset.work legend, fieldset.attach legend {
+	background-color: #d9dbda;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*styling the fieldset for education status separately*/
+fieldset.status legend {
+	background-color: white;
+	font: 1em arial;
+	width: 70%;
+}
+
+/*styling the fieldset for education separately*/
+fieldset.status {
+	width: 30%;
+	margin-left: 119px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*rounded edges*/
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	/*gray shadow*/
+	-webkit-box-shadow:0px 0px 40px 0px #5a5353 ;
+	-moz-box-shadow:0px 0px 20px 0px #5a5353 ;
+	box-shadow:0px 0px 20px 0px #5a5353 ;
+}
+
+/*styling the input for education status*/
+fieldset.status input {
+	width: 10px;
+}
+
+/*styling the buttons*/
+fieldset.buttons {
+	text-align: center;
+}
+
+/*styling the buttons*/
+fieldset.buttons input {
+	color: white;
+	font-weight: bold;
+	width: 12%;
+	padding: 10px;
+	background-color: red;
+	/*rounded edges*/
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	/*gray shadow*/
+	-webkit-box-shadow:0px 0px 40px 0px #5a5353 ;
+	-moz-box-shadow:0px 0px 20px 0px #5a5353 ;
+	box-shadow:0px 0px 20px 0px #5a5353 ;
+}
+
+/*styling the background of each form section*/
+.basic, .education, .work, .attach {
+	background-color: #f2f2f2;
+	margin-bottom: 10px;
+}

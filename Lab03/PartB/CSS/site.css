@@ -1,0 +1,137 @@
+/********************************************************************************* 
+*
+* INT222 – Lab #3b
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Alena Mitrakhovich Student ID: 115 297 152 Date: October 23, 2016
+* 
+********************************************************************************/
+
+/*canadianPT.html*/
+/*step 1*/
+/*select all elements with the class "main-container" and set the max size and all the margins*/
+.main-container{
+	max-width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*select all nav elements that are a child of an element with a class "main-container" and adjust 
+it's size and position*/
+.main-container nav{
+	width: 30%;
+	float: left;
+}
+
+/*select all elements which a class "main" that are a child of all elements with a class "main-container and adjust
+it's size and position"*/
+.main-container .main {
+	width: 70%;
+	float: right;
+}
+
+/*select all header elements that are a child of an element with a class "main-container" and set the background color,
+a border attribute and color, margins(space around elements), and the padding(space around the content)*/
+.main-container header{
+	padding: 10px;
+	background-color: #eeeeee;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 30px;
+}
+
+/*select all h1 elements that are a child of the header element with a class "main-container" and adjust the size, font-size,
+position, text position, and the margins */
+.main-container header h1{
+	width: 70%;
+	font-size: 24px;
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+
+/*select all footer elements with a class "main-container" and clear the element(position beneath all floating elements), 
+adjust space around the contect, background color, border attribute 
+and color, and font-size*/
+.main-container footer{
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #eeeeee;
+	border-top: 1px solid #cccccc;
+	font-size: 13px;
+}
+
+/*step 2*/
+/*select the element with the logo id and adjust the size, font-size, and font-weight(make it bold)*/
+#logo{
+	width: 30%;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*select the img element with the logo id parent and adjust the size and position/alignment*/
+#logo img{
+	width: 94px;
+	vertical-align: middle;
+}
+
+/*select the ul elements that are child of nav elements and style the look of the list*/
+nav ul{
+	list-style-type: none;
+}
+
+/*select the a elements that are child of ul elements and child of nav elements and adjust the display,
+text, and spacing*/
+nav ul a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/*Step 3*/
+/*select the div elements with province class and adjust the size, position, margins, and height*/
+div.province{
+	width: 30%;
+	float: left;
+	margin: 8px;
+	height: 310px;
+}
+
+/*select the div elements with province class and all elements with description class and format the cells' height, 
+scrolls and action when the content takes more than allocated space, and margins*/
+div.province .description{
+	max-height: 165px;
+	overflow-y: auto;
+	overflow-x: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+/*select the div elements with province class with a elements as their child and adjust the link
+to be a 'block-level' element, position the text, set the background-color, text color, take away
+underlining, and set spacing around the content*/
+div.province a{
+	display: block;
+	text-align: center;
+	background-color: #555555;
+	color: #eeeeee;
+	text-decoration: none;
+	padding: 5px;
+}
+
+/*select img elements with flag class and adjust the size*/
+img.flag {
+	width: 100%;
+}
+
+audio {
+	width: 20%;
+}
